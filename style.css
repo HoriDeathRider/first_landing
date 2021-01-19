@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
 }
 
@@ -86,50 +86,25 @@
     margin-right: 143px;
 }
 
-.test {
-    position: relative;
-    border-bottom: 2px solid grey;
-    width: 100px;
-    margin-bottom: 40px;
-}
-
-.test::after {
-    position: absolute;
-    content: "";
-    width: 50px;
-    border-bottom: 2px solid red;
-}
-
-@media screen and (max-width: 1720px) {
-    .hero {
-        padding: 0;
-        align-items: center;
-        height: 100vh;;
-    }
-}
-
 .about{
     background-color:#F9F9F9;  
+    height: 366px;
 }
 
 .about_title{
-    padding-top: 110px;
     font-weight: 500;
     font-size: 32px;
+    color: #000000;
+    padding-top: 110px;
     line-height: 37px;
     text-align: center;
-    color: #000000;
+    margin-bottom: 50px;
 }
 
 .about_subtitle{
-    margin-top: 50px;
-    margin-left: 505px;
-    padding-bottom: 100px;
-    font-weight: normal;
-    font-size: 16px;
+    margin: 0 auto;
     line-height: 26px;
     text-align: center;
-    color: #727272;
     width: 540px;
     height: 67px;
 }
@@ -146,8 +121,237 @@
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
+    width: 970px;
 }
 
 .project_list_item{
     display: flex;
+    color: white;
+    width: 141px;
+    height: 50px;
+    margin-right: 49px;
+}
+
+.project_quantity{
+    padding-left: 20px;
+}
+
+.talents{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.skill_name{
+    margin-bottom: 20px;
+}
+
+.skills_section{
+margin-right: 150px;
+}
+
+.skills_progress_bar {
+    position: relative;
+    border-bottom: 2px solid grey;
+    width: 350px;
+    margin-bottom: 40px;
+}
+
+.skills_progress_bar::after {
+    position: absolute;
+    content: "";
+    width: 300px;
+    border-bottom: 2px solid #34547A;
+}
+
+.skills_progress_bar:first-child{
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 1720px) {
+    .hero {
+        padding: 0;
+        align-items: center;
+        height: 100vh;;
+    }
+}
+
+.man{
+    width: 555px;
+    height: 450px;
+}
+
+.how{
+    padding-bottom: 100px;
+    background-color: #EEEFF1;
+}
+
+.how_title{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 100px;
+}
+
+.how_title_text{
+    width: 540px;
+    height: 67px;
+    line-height: 26px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 57px;
+}
+
+.img_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/code.svg);
+    background-repeat: no-repeat;
+    width: 1110px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.bg{
+    width: 1110px;
+    height: 600px;
+}
+
+.play_icon{
+    width: 100px;
+    height: 100px;
+}
+
+.mosaic_wrap{
+    display: grid;
+    grid-gap: 0;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.mosaic_img{
+    width: 422px;
+    height: 422px;
+}
+
+.banner{
+    width: 1110px;
+    height: 292px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.banner_img{
+    margin-right: 30px;
+}
+
+.banner_img>li:last-child{
+    margin-right: 0px;
+}
+/*  ЛАСТ ЧАЙЛД НЕ РАБОТАЕТ, НЕ МОГУ ВЗЯТЬ В ТОЛК ПОЧЕМУ */
+.offer{
+    background-color: #EEEFF1;
+    height: 762px;
+    text-align: center;
+    padding-top: 100px;
+    font-size: 0;
+}
+
+/*  У меня дырявая голова, но вроде же в оффер Алена посоветовала пилить фонт-сайз:0 ?  в общем и он не работает*/
+
+.offer_offer{
+    margin-bottom: 50px;
+}
+
+.offer_wrapper{
+    width: 540px;
+    height: 175px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.offer_discribe{
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+
+input{
+    color: #727272;
+    border: none;
+    /* margin-top: 10px; */
+    width: 255px;
+    height: 55px;
+    padding: 17px 0px 18px 20px;
+}
+
+input:last-child{
+    margin-left: 30px;
+}
+
+.textarea{
+    margin-top: 10px;
+    width: 540px;
+    height: 175px;
+    border: none;
+    padding: 17px 0px 0px 20px;
+    margin-bottom: 50px;
+}
+
+.offer_btn{
+    width: 190px;
+    height: 55px;
+    background-color: #34547a;
+    color: #F9F9F9;
+    border: none;
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.footer{
+    background-color: #34547A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+
+.name{
+    color: #F9F9F9;
+    font-weight: 500;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+.copywright{
+    color: #F9F9F9;
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.footer_social{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+
+.footer_social>li{
+    margin-right: 22px;
+}
+
+.footer_social>li:last-child{
+    margin-right: 0px;
+}
+
+
+.ic img{
+    display: block;
+    position: relative;
 }
