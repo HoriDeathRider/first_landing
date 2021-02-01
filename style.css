@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+    
 }
 
 /* ----------------------------------------------header */
@@ -234,9 +235,37 @@ margin-right: 150px;
     grid-template-columns: repeat(4, 1fr);
 }
 
+.p{
+    position: relative;
+    width: 422px;
+    height: 422px;
+}
+
 .mosaic_img{
     width: 422px;
     height: 422px;
+}
+
+.overlay{
+    width: 422px;
+    height: 422px;
+    display: none;
+    background-color: rgba(52, 84, 122);
+    position: absolute;
+    top: 0px;
+}
+
+.p:hover .overlay {
+    display:block;
+    opacity: 0.8;
+}
+
+.icon1{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .banner{
@@ -265,8 +294,6 @@ margin-right: 150px;
     font-size: 0;
 }
 
-/*  У меня дырявая голова, но вроде же в оффер Алена посоветовала пилить фонт-сайз:0 ?  в общем и он не работает*/
-
 .offer_offer{
     margin-bottom: 50px;
 }
@@ -276,6 +303,10 @@ margin-right: 150px;
     height: 175px;
     margin: 0 auto;
     margin-bottom: 50px;
+}
+
+.input_wrapper{
+    font-size: 0;
 }
 
 .offer_discribe{
